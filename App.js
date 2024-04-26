@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { StyleSheet, Text, TextInput, View, Button, TouchableOpacity,Image } from 'react-native';
+import CalcularScreen from './src/screens/calcularScreen';
 
 export default function App() {
+//
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <CalcularScreen/>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +20,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+
 });
